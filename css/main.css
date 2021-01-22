@@ -1,44 +1,9 @@
-/* REGOLE GENERALI */
+/* regole generali */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-
-#container-1 {
-  background: url("../img/berlin.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  /* border: 1px solid black; */
-}
-
-#container-2 {
-  background: url("../img/nairobi.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  /* border: 1px solid black; */
-}
-
-#container-3 {
-  background: url("../img/tokyo.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  /* border: 1px solid black; */
-}
-
-#titoli {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  /* text-shadow: 2px 2px black; */
 }
 
 .overlay {
@@ -48,6 +13,40 @@
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: 900;
+  z-index: 1;
+}
 
+  /* corpo della pagina */
+
+#container-1 {
+  background: url("../img/berlin.jpg");
+  /* border: 2px solid black; */
+}
+
+#container-2 {
+  background: url("../img/nairobi.jpg");
+  /* border: 2px solid black; */
+}
+
+#container-3 {
+  background: url("../img/tokyo.jpg");
+  /* border: 1px solid black; */
+}
+
+#container-1, #container-2, #container-3 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.titoli {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  text-shadow: 2px 2px black;
 }
