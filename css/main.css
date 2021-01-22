@@ -1,16 +1,30 @@
 /* REGOLE GENERALI */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: green;
-} */
 
-#container {
+#container-1 {
   background: url("../img/berlin.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#container-2 {
+  background: url("../img/nairobi.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#container-3 {
+  background: url("../img/tokyo.jpg");
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -23,6 +37,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 25px;
+  /* text-shadow: 2px 2px black; */
 }
 
 .overlay {
